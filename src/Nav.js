@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { NavLink } from 'react-router-dom';
 import './Nav.css';
 
 function Nav() {
@@ -26,11 +27,15 @@ function Nav() {
                 alt = "Netflix logo"
             />
 
-           <img
+            <NavLink to="/genres" className="nav__signin__btn">Sign In</NavLink>
+            <NavLink to="/genres" className="nav__signup__btn">Sign Up</NavLink>
+
+
+           {/*<img
                 className="nav__avatar"
                 src="https://pbs.twimg.com/profile_images/1240119990411550720/hBEe3tdn_400x400.png"
                 alt = "Netflix logo"
-            /> 
+            /> */}
 
             
             
