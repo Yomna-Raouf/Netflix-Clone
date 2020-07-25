@@ -14,7 +14,7 @@ function Nav() {
         });
 
         return () => {
-            window.removeEventListener("scroll");
+           // window.removeEventListener("scroll");
         }
 
     }, []);
@@ -28,7 +28,7 @@ function Nav() {
             />
 
             <NavLink to="/genres" className="nav__signin__btn">Sign In</NavLink>
-            <NavLink to="/genres" className="nav__signup__btn">Sign Up</NavLink>
+            <NavLink to="/SignUp" className="nav__signup__btn">Sign Up</NavLink>
 
 
            {/*<img

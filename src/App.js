@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Row from  './Row';
 import Banner from './Banner';
 import Nav from './Nav';
+import SignUp from './SignUp';
 import './App.css';
 import requests from './requests';
 
@@ -11,6 +12,9 @@ function App() {
 
     <BrowserRouter>
       <Switch>
+        <Route path="/SignUp">
+          <SignUp />
+        </Route>
         <Route path="/genres">
         <div className="App">
           <Nav />
@@ -30,15 +34,6 @@ function App() {
         </Route>
       </Switch>
     </BrowserRouter>
-      
-       
-      
-    
-
-
-    /*
-    
-    */
   );
 }
 
